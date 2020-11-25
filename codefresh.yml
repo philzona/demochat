@@ -12,7 +12,6 @@ steps:
     repo: "philzona/demochat"
     revision: "master"
     stage: "clone"
-    git:
 
   build_dev_image:
     title: "Building Dev image"
