@@ -36,7 +36,6 @@ steps:
     type: "build"
     image_name: "codefreshphil/demochat"
     working_directory: "${{clone}}"
-    tag: "dev"
     dockerfile: "Dockerfile"
     stage: "build"
     
