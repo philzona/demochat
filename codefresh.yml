@@ -56,5 +56,5 @@ steps:
     composition_candidates:
       main:
         image: nhoag/curl
-        command: bash -c "sleep 30 && curl http://app:5000/" | echo 'works'    
+        command: bash -c "sleep 60 && curl http://app:5000/" | echo 'works'    
 
