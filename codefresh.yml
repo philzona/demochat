@@ -9,14 +9,15 @@ steps:
   clone:
     title: "Cloning repository"
     type: "git-clone"
-    repo: "codefreshdemo/demochat"
+    repo: "philzona/demochat"
     revision: "master"
     stage: "clone"
+    git:
 
   build_dev_image:
     title: "Building Dev image"
     type: "build"
-    image_name: "codefreshdemo/demochat"
+    image_name: "codefreshphil/demochat"
     working_directory: "${{clone}}"
     tag: "dev"
     dockerfile: "Dockerfile.dev"
@@ -34,7 +35,7 @@ steps:
   build_image:
     title: "Building App image"
     type: "build"
-    image_name: "codefreshdemo/demochat"
+    image_name: "codefreshphil/demochat"
     working_directory: "${{clone}}"
     tag: "dev"
     dockerfile: "Dockerfile"
